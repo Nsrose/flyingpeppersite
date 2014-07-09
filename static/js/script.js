@@ -10,14 +10,14 @@ $(document).ready(function(){
 		$("#video_modal").hide();	
 		$(this).css({
 			"z-index":"0",
-			"opacity":"0.7",
+			"opacity":"0.6",
 		})
 	})
 	$("#video_modal").click(function() {
 		$(this).hide();	
 		$("#cover_overlay").css({
 			"z-index":"0",
-			"opacity":"0.7",
+			"opacity":"0.6",
 		})
 	})
 });
