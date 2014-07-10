@@ -264,6 +264,6 @@ body {
 .section_video_overlay_play:hover {
     opacity: 1;
 }
-#demo_reel {
+#video_player {
     display: none;
 }
