@@ -74,13 +74,15 @@ $(document).ready(function(){
 		})
 	})
 	$(".section_video_overlay").mouseleave(function() {
-		
 		$(this).css({
 			"top":"-150",
 			"opacity":"0",
 		})
-		
-		
-		
 	})
+	// $(".section_video").mouseleave(function() {
+	// 	$(".section_video_overlay").css({
+	// 		"top":"-150",
+	// 		"opacity":"0",
+	// 	})
+	// })
 });
