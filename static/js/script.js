@@ -5,6 +5,10 @@ var video_ids = {
 	"play_video_2":"//player.vimeo.com/video/88093599",
 	"play_video_3":"//player.vimeo.com/video/95032876",
 	"play_video_4":"//www.youtube.com/embed/-c2U2idnWqU",
+	"play_video_5":"//www.youtube.com/embed/STfyqhtFpX0",
+	"play_video_6":"//www.youtube.com/embed/ottIzcOHpYA",
+	"play_video_7":"//www.youtube.com/embed/OuO6_DVwH4U",
+	"play_video_8":"//video.aarp.org/video/Maria-1/player?layout=compact&amp;read_more=1",
 
 }
 
