@@ -318,3 +318,16 @@ body {
 #aerial_section_content_container {
     height: 580px;
 }
+#music {
+    position: relative;
+}
+.section_video_container {
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80%;
+}
+#music_title {
+    width: 200px;
+}

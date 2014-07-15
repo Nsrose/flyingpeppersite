@@ -9,6 +9,13 @@ var video_ids = {
 	"play_video_6":"//www.youtube.com/embed/ottIzcOHpYA",
 	"play_video_7":"//www.youtube.com/embed/OuO6_DVwH4U",
 	"play_video_8":"//video.aarp.org/video/Maria-1/player?layout=compact&amp;read_more=1",
+	// music:
+	"play_video_9":"//player.vimeo.com/video/65792909",
+	"play_video_10":"//player.vimeo.com/video/95038021",
+	"play_video_11":"//player.vimeo.com/video/59462613",
+	"play_video_12":"//www.youtube.com/embed/4Bnwjvpp6fc",
+	"play_video_13":"//www.youtube.com/embed/h00WrGn-zuI",
+	"play_video_14":"//www.youtube.com/embed/eg8xoYqOEd8",
 
 }
 
