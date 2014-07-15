@@ -331,3 +331,31 @@ body {
 #music_title {
     width: 200px;
 }
+#section_video_container_holder_music {
+    background: #14688C; width: 100%;
+}
+#contact {
+    position: relative;
+}
+.footer {
+    background: black;
+    text-align: center;
+}
+#footer_client {
+    opacity: 0.5;
+    font-size: 13px;
+}
+#footer_me {
+    opacity: 0.5; font-size: 13px;
+}
+#footer_content {
+    line-height: 2;
+}
+.ext_link {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.ext_link:hover {
+    color: rgba(125, 249, 255, 1);
+}
