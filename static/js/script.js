@@ -21,9 +21,6 @@ video_chooser = function(video_id) {
 $(document).ready(function(){
 	
 	// Video modal control:
-
-
-
 	$("#cover_content_modal_action").click(function() {
 		$("#main_overlay").css({
 			"opacity":"0.9",
@@ -42,6 +39,7 @@ $(document).ready(function(){
 	})
 
 	$("#main_overlay").click(function() {
+		$("#video_player").attr('src', '');
 		$("#video_modal").hide();
 		$("#video_player").hide();	
 		$(this).css({
@@ -50,6 +48,7 @@ $(document).ready(function(){
 		})
 	})
 	$("#video_modal").click(function() {
+		$("#video_player").attr('src', '');
 		$(this).hide();	
 		$("#video_player").hide();
 		$("#main_overlay").css({
@@ -70,23 +69,33 @@ $(document).ready(function(){
 
 
 	// Hover and animation:
-	$(".section_video").mouseenter(function() {
-		var section_id = $(this).parent().find("div").attr("id")
+	
+	$(".section_video_holder").hover(function() {
+		var section_id = $(this).find("div").attr("id")
 		$("#" + section_id).css({
-			"opacity":"0.9",
-			"top":"0",
-		})
+	 		"opacity":"0.9",
+	 		"top":"0",
+	 	});
+	}, function() {
+		var section_id = $(this).find("div").attr("id")
+	 		$("#" + section_id).css({
+	 			"top":"-150",
+	     		"opacity":"0",
+	 		})
 	})
-	$(".section_video_overlay").mouseleave(function() {
-		$(this).css({
-			"top":"-150",
-			"opacity":"0",
-		})
-	})
-	// $(".section_video").mouseleave(function() {
-	// 	$(".section_video_overlay").css({
+
+	// $(".section_video").mouseenter(function() {
+	// 	var section_id = $(this).parent().find("div").attr("id")
+	// 	$("#" + section_id).css({
+	// 		"opacity":"0.9",
+	// 		"top":"0",
+	// 	})
+	// })
+	// $(".section_video_overlay").mouseleave(function() {
+	// 	$(this).css({
 	// 		"top":"-150",
 	// 		"opacity":"0",
 	// 	})
 	// })
+
 });
