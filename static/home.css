@@ -104,6 +104,8 @@ body {
     cursor:pointer;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 #cover_content_down_arrow_container {
     width: 100%;
@@ -176,7 +178,7 @@ body {
     position: relative;
     text-align: center;
     /* margin-top: 100px; */
-    padding-top: 40px;
+    /* padding-top: 40px; */
     /* border-top: 1px solid; */
 }
 .section_title {
@@ -358,4 +360,7 @@ body {
 }
 .ext_link:hover {
     color: rgba(125, 249, 255, 1);
+}
+#cover_content_down_arrow:hover {
+    margin-bottom: 10px;
 }

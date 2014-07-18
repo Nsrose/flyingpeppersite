@@ -94,18 +94,15 @@ $(document).ready(function(){
 	 		})
 	})
 
-	// $(".section_video").mouseenter(function() {
-	// 	var section_id = $(this).parent().find("div").attr("id")
-	// 	$("#" + section_id).css({
-	// 		"opacity":"0.9",
-	// 		"top":"0",
-	// 	})
-	// })
-	// $(".section_video_overlay").mouseleave(function() {
-	// 	$(this).css({
-	// 		"top":"-150",
-	// 		"opacity":"0",
-	// 	})
-	// })
+	$(".navbar_item").click(function() {
+		var navbar_item_id = $(this).attr('id').slice(12);
 
+		$("html, body").animate({ scrollTop: $("#" + navbar_item_id).offset().top - 50 }, 1000);
+	})
+
+	$("#cover_content_down_arrow").click(function() {
+		$("html, body").animate({ scrollTop: $("#about").offset().top - 50 }, 1000);
+	})
+
+	
 });
