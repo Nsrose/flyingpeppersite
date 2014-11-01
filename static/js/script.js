@@ -101,7 +101,7 @@ $(document).ready(function(){
 	})
 
 	$("#cover_content_down_arrow").click(function() {
-		$("html, body").animate({ scrollTop: $("#about").offset().top - 50 }, 1000);
+		$("html, body").animate({ scrollTop: $("#aerial").offset().top - 50 }, 1000);
 	})
 
 	
