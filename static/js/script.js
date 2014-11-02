@@ -104,5 +104,65 @@ $(document).ready(function(){
 		$("html, body").animate({ scrollTop: $("#aerial").offset().top - 50 }, 1000);
 	})
 
+	// Carousel animations:
+	$("#carousel_right_container").on("click", ".carousel_right_1", function() {
+		$("#aerial_content_1").css({
+			"margin-left":"-600px",
+		})
+		$(this).addClass("carousel_right_2");
+		$(this).removeClass("carousel_right_1");
+		$("#carousel_left").addClass("carousel_left_2");
+		$("#carousel_left").removeClass("carousel_left_1");
+	})
+
+	$("#carousel_right_container").on("click", ".carousel_right_2", function() {
+		$("#aerial_content_2").css({
+			"margin-left":"-600px",
+		})
+		$(this).addClass("carousel_right_3");
+		$(this).removeClass("carousel_right_2");
+		$("#carousel_left").addClass("carousel_left_3");
+		$("#carousel_left").removeClass("carousel_left_2");
+	})
+	$("#carousel_right_container").on("click", ".carousel_right_3", function() {
+		$("#aerial_content_3").css({
+			"margin-left":"-600px",
+		})
+		$(this).addClass("carousel_right_4");
+		$(this).removeClass("carousel_right_3");
+		$("#carousel_left").addClass("carousel_left_4");
+		$("#carousel_left").removeClass("carousel_left_3");
+	})
+
+	// Left directions for carousel:
+	$("#carousel_left_container").on("click", ".carousel_left_2", function() {
+		$("#aerial_content_1").css({
+			"margin-left":"0px",
+		})
+		$(this).addClass("carousel_left_1");
+		$(this).removeClass("carousel_left_2");
+		$("#carousel_right").addClass("carousel_right_1");
+		$("#carousel_right").removeClass("carousel_right_2");
+	})
+
+	$("#carousel_left_container").on("click", ".carousel_left_3", function() {
+		$("#aerial_content_2").css({
+			"margin-left":"0px",
+		})
+		$(this).addClass("carousel_left_2");
+		$(this).removeClass("carousel_left_3");
+		$("#carousel_right").addClass("carousel_right_2");
+		$("#carousel_right").removeClass("carousel_right_3");
+	})
+
+	$("#carousel_left_container").on("click", ".carousel_left_4", function() {
+		$("#aerial_content_3").css({
+			"margin-left":"0px",
+		})
+		$(this).addClass("carousel_left_3");
+		$(this).removeClass("carousel_left_4");
+		$("#carousel_right").addClass("carousel_right_3");
+		$("#carousel_right").removeClass("carousel_right_4");
+	})
 	
 });
